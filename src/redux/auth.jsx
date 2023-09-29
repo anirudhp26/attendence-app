@@ -13,6 +13,7 @@ export const authSlice = createSlice({
         setLogin: (state, action) => {
             state.user = action.payload.user;
             state.token = action.payload.token;
+            state.cart = action.payload.cart;
         },
 
         setLogout: (state) => {
@@ -20,6 +21,10 @@ export const authSlice = createSlice({
             state.token = null;
             state.cart = [];
         },
+
+        setCart: (state, action) => {
+            state.cart = action.payload.cart;
+        }
     }
 });
 

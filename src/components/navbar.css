@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 14vh;
+    margin: auto;
+}
+
+.navbar > p {
+    margin: 0 1rem;
+}
+
+.navbar > .navbar-cart > i {
+    margin: 0 0.7rem;
+    font-size: 25px;
+    display: flex;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.navbar-cart {
+    position: relative;
+    margin: 0 2rem;
+}
+
+.navbar > .navbar-cart > i:hover{
+    background-color: black;
+    color: white;
+}
+
+.cart-notch {
+    position: absolute;
+    color: red;
+    bottom: 0;
+    font-size: 15px;
+    right: 0;
+}
+
+.logout-btn {
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color: rgb(249, 32, 32);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 1rem;
+    transition: all 0.5s;
+}
+
+.logout-btn:hover{
+    background-color: red;
+    border-radius: 0px;
+}

@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Auth from "./Views/Auth";
 import Home from "./Views/Home";
 import { useSelector } from "react-redux";
-
 function App() {
   const token = useSelector((state) => state.token);
   return (

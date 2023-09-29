@@ -20,7 +20,8 @@ export default function Auth() {
       console.log(userInfo);
       dispatch(setLogin({
         user: userInfo.data,
-        token: userInfo.data.sub
+        token: userInfo.data.sub,
+        cart: [],
       }))
     },
     onError: (errorResponse) => console.log(errorResponse),
